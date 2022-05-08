@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱的礼物</title>
+    <style>
+        .div1{
+            border: 3px solid pink;
+            width: auto;
+            height: 45px;
+            background:hotpink;
+            color: aliceblue;
+            text-align: center;
+            font-size:30px;
+            border-radius: 10px;
+        }
+        body{
+            background-size: 100% 800px;
+        }
+        .div2{
+            border: 3px solid black;
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+            float: right;
+            font-size:20px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        a:hover{
+            color: black;
+        }
+        a{
+            color: hotpink;
+            cursor: pointer;
+        }
+        table{
+            border: 4px solid black;
+            align: center;
+            width: 800px;
+            height: 500px;
+            font-size:20px;
+        }
+    </style>
+    <script>
+        /*
+        * 分析：
+        *   1.在页面上使用img标签展示页面
+        *   2.定义一个方法，修改图片对象的src属性
+        *   3.定义一个定时器，每隔3秒调用方法一次
+        * */
+        //修改图片src属性
+        var number=1;
+
+        function fun(){
+            number++;
+            //判断number是否大于7
+            if(number>6){
+                number=1;
+            }
+            //获取img对象
+            var img = document.getElementById("img");
+            img.src="images/banner"+number+".jpg";
+        }
+        //2.定义定时器（）
+        setInterval(fun,3000);
+    </script>
+</head>
+<body background="images/bg1.jpg">
+<div>
+    <span><img src="images/log.png" width="150" height="120"></span>
+    <span>
+    <strong>
+        <div style="margin-right: 10px;float: right">
+            <a href="#d"><div class="div2">秘密<br>Four</div></a>
+        <a href="#c"><div class="div2">秘密<br>Three</div></a>
+        <a href="#b"><div class="div2">秘密<br>Two</div></a>
+        <a href="#a"><div class="div2">秘密<br>One</div></a>
+            <a href="gift.html"><div class="div2">首页<br>Home</div></a>
+        </div>
+    </strong>
+    </span>
+</div>
+<div class="div1" ><marquee>Happy Mother's Day!</marquee></div>
+<hr style="background-color: plum" width=70% size=5>
+<!--轮播图-->
+
+<div>
+    <center><img id="img" src="images/banner1.jpg" ></center>
+</div>
+<div style="margin: 5px">
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+    <span><img src="images/t.png" height="60px" width="60px"></span>
+    <span><img src="images/f.png" height="60px" width="60px"></span>
+
+</div>
+<div class="div1" style=" height: 30px; background:pink;font-size:20px;"><marquee scrollamount="10">SteamLeader&&蒸汽创客</marquee></div>
+<hr style="background-color: mediumpurple"  size=6>
+<!--one暖心视频-->
+<div>
+        <img src="images/c1.png" height="60px" width="60px">
+        <strong><span style="font-size: 20px;" color="black"><a name="a">妈妈您辛苦啦！</a></span></strong>
+    <center>
+        <object data="Demo.mp4" width="800" height="600">
+            <embed width="500" height="300" src="./Demo.mp4" autostart="false">
+        </object>
+    </center>
+</div>
+<hr style="background-color: mediumpurple"  size=6>
+<!--two我与妈妈的时光机-->
+<div>
+    <img src="images/t.png" height="60px" width="60px">
+    <strong><span style="font-size: 20px;" color="black"><a name="b">我与妈妈的时光机</a></span></strong>
+    <br>
+        <div style="border: 5px solid black;border-radius: 10px;">
+            <center>
+            <span><img src="images/p1.jpg" height="500px" width="400px"></span>
+                &nbsp;&nbsp;&nbsp;
+            <span><img src="images/p3.png" height="500px" width="400px"></span>
+                &nbsp;&nbsp;&nbsp;
+            <span><img src="images/p2.jpg" height="500px" width="400px"></span>
+            </center>
+        </div>
+
+</div>
+<hr style="background-color: mediumpurple"  size=6>
+<!--three妈妈我想对你说-->
+<div>
+    <img src="images/f.png" height="60px" width="60px">
+    <strong><span style="font-size: 20px;" color="black"><a name="c">妈妈我想对你说</a></span></strong>
+    <center>
+        <object data="Demo2.mp4" width="700" height="600">
+            <embed width="700" height="600" src="Demo2.mp4" autostart="false">
+        </object>
+    </center>
+</div>
+<hr style="background-color: mediumpurple"  size=6>
+<!--four致妈妈的一封信-->
+<div>
+    <img src="images/c4.png" height="60px" width="60px">
+    <strong><span style="font-size: 20px;" color="black"><a name="d">致妈妈的一封信</a></span></strong>
+    <div>
+    <center>
+            <h1>致妈妈的一封信</h1>
+            <strong><table bgcolor="#f0f8ff"><td>
+                &nbsp;&nbsp; 山，没有母亲的爱高；海，没有母亲的爱深；天，没有母亲的爱广阔；地，没有母亲的爱包容； 太阳，没有母亲的爱温暖；让我们共祝母亲健康快乐！
+                <br>　　
+                &nbsp;&nbsp;看着妈妈日渐增多的白发，看着妈妈日益深刻的皱纹，看着妈妈渐渐弯曲的身躯，孩子心中有无尽的感激，但都汇成一句：妈妈！我爱您！ 除了母亲，谁能荣膺，让我们齐颂母亲我爱你！母亲你永远快乐！您是给我以生命并抚育我成长的土地，我深深地爱着您。 母亲节快乐！唯有一句轻轻的祝福，给所有年轻的、老迈的母亲们。母亲您给了我生命，而我则成了您永远的牵挂。 在我无法陪伴左右的日子里，愿妈妈您每一天都平安快乐。
+                <br>　　　
+                &nbsp;&nbsp;母亲永远是我心灵的港湾，祝亲爱的妈妈健康快乐！您的爱是崇高的爱，只是给予，不求索取，不溯既往，不讨恩情。 外边风吹雨打折磨着我，屋内和煦的阳光温暖着我，因为屋内有您，我爱您妈妈，永远永远！在这个特别的日子里，我想对妈妈您说声：妈妈节日快乐！愿妈妈在今后的日子里更加健康快乐！ 时光荏苒，我们在妈妈温馨的抚爱中长大成人，妈妈总是把一缕缕温暖及时输送给我们，让我们在纷杂的尘世中永存那份做人的品性，不失那份人之初的纯真。 在这个特别的日子里，我想对妈妈您说声：妈妈节日快乐！愿妈妈在今后的日子里更加健康快乐！
+                 <br>　　　
+                &nbsp;&nbsp;世上只有妈妈好，没有天就没有地，没有您就没有我，谢谢您给我带来的一切一切。 您的爱，我永远报答不了；您对我多年以来的默默支持，是我积极向上的精神支柱。妈妈，我爱您。
+                　</td></table></font></strong>
+    </center>
+    </div>
+</div>
+<!--插入背景音乐-->
+<embed src="./yinyue.mp3" autostart="true" loop="true">
+
+</body>
+
+</html>
